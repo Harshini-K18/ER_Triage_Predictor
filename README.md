@@ -1,23 +1,69 @@
-# Triage to AI
+# Emergency Room Triage Predictor
 
-The objective of this project is to predict whether a patients will be admitted to the hospital or not based on vitals taken upon entering the ER. 
+A web application that predicts the urgency level of patients in an Emergency Room (ER) setting using vital signs and symptoms, and provides an estimated wait time and recommended action.
 
-**Dataset:**
+## Features
 
-- Data comes from a [Korean Triage Study](https://figshare.com/articles/Triage_accuracy_and_causes_of_mistriage_using_the_Korean_Triage_and_Acuity_Scale/9779267/1)
+- **Patient Data Entry:** Enter patient name, age, heart rate, temperature, oxygen saturation, pain level, AVPU, and select symptoms.
+- **Urgency Prediction:** Uses a machine learning model to predict the triage level (Critical, Not Critical, Normal).
+- **Estimated Wait Time:** Displays estimated wait time based on the prediction and patient vitals.
+- **Recommended Action:** Suggests whether immediate medical attention is required or a routine check-up is sufficient.
+- **Nearby Hospitals:** For critical cases, shows a link to nearby hospitals using Google Maps and the user's location.
+- **Animated UI:** Modern, animated dashboard with medical-themed icons and a custom beating heart-stethoscope SVG.
+- **Responsive Design:** Works well on desktop and mobile browsers.
 
-**Notebooks:**
+## Tech Stack
 
-- cleaning_eda: Going through each feature in the study, filling in nulls, and visualizing distributions <br/>
-- features: Feature engineering by binning some categoricals and transforming features with skewed distributions <br/>
-- models: Exprimenting with different classification models and assessing them using Fbeta score
+- **Backend:** Python, Flask
+- **Frontend:** HTML, CSS (Bootstrap 4, custom styles), JavaScript
+- **Icons:** Bootstrap Icons
+- **Font:** Lora (Google Fonts)
 
-**Write Up:**
+## Setup Instructions
 
-I published a blog detailing this project to Towards Data Science. It can be found [here](https://towardsdatascience.com/triage-to-ai-a-machine-learning-approach-to-hospital-admissions-classification-7d3a8d5df631)
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Harshini-K18/ER_Triage_Predictor.git
+   cd ER_Triage_Predictor
+   ```
 
-**Conclusions:**
+2. **Create and activate a virtual environment:**
+   ```sh
+   python -m venv venv
+   venv\Scripts\activate   # On Windows
+   # Or
+   source venv/bin/activate  # On Mac/Linux
+   ```
 
-Logistic regression represents the best predictions keeping in mind simplicity and interpretability. An app was deployed to allow for real-time prediction [here](https://hospital-admissions-predictor.herokuapp.com/)
+3. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-- website: Scripts for building and deploying heroku app and pickled model are stored here
+4. **Run the app:**
+   ```sh
+   cd website
+   python model_app.py
+   ```
+
+5. **Open your browser and go to:**
+   ```
+   http://127.0.0.1:5000/
+   ```
+
+## Project Structure
+
+```
+ER_Triage_Predictor/
+├── website/
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── template.css
+│   │   └── favicon.ico
+│   ├── templates/
+│   │   ├── index.html
+│   │   └── home.html
+│   └── model_app.py
+├── requirements.txt
+└── README.md
+```
