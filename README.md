@@ -76,5 +76,3 @@ ER_Triage_Predictor/
 ![Image](https://github.com/user-attachments/assets/154bb30f-0071-4815-858a-e0b82729ec93)
 ![Image](https://github.com/user-attachments/assets/4eec18e6-f1fb-49cc-b6b0-0c54bbbd62e4)
 ![Image](https://github.com/user-attachments/assets/99e1cf50-dd66-4365-9482-e2c093d64340)
-![Image](https://github.com/user-attachments/assets/42eae281-1ac4-40de-8143-355d08049aab)
-![Image](https://github.com/user-attachments/assets/c40c9ff0-5d9c-4ce6-9fda-bcccf95fe188)
