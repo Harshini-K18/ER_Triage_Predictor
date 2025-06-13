@@ -68,7 +68,6 @@ ER_Triage_Predictor/
 └── README.md
 ```
 
-![Image](https://github.com/user-attachments/assets/a70bdb3d-1e52-4519-9db4-827ee9e6de1b)
 ![Image](https://github.com/user-attachments/assets/ea2f4b48-23b4-4f00-bde4-aee1a20a2501)
 ![Image](https://github.com/user-attachments/assets/d5f199a3-fa64-4a4a-ad73-f32fa844d889)
 ![Image](https://github.com/user-attachments/assets/154bb30f-0071-4815-858a-e0b82729ec93)
